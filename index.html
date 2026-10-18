@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RE NERO · Menu</title>
+<style>body{margin:0;background:#fff;font-family:Helvetica,Arial,sans-serif;color:#8F8F8F}.l{min-height:100vh;display:flex;align-items:center;justify-content:center;font-size:11px;letter-spacing:.4em;text-transform:uppercase}</style>
+</head>
+<body>
+<div class="l">Re Nero · menu</div>
+<script>
+fetch('https://uaexmkcbchzqrriwbffv.supabase.co/rest/v1/menu_pages?slug=eq.reggia&select=html',{headers:{apikey:'sb_publishable_Gd5TqeEH5lO_sLAlY2Ygxg_FBkpR_WO',Authorization:'Bearer sb_publishable_Gd5TqeEH5lO_sLAlY2Ygxg_FBkpR_WO'},cache:'no-store'})
+.then(function(r){return r.json()})
+.then(function(d){if(!d||!d[0])throw 0;document.open();document.write(d[0].html);document.close();})
+.catch(function(){document.querySelector('.l').textContent='Menu momentaneamente non disponibile';});
+</script>
+</body>
+</html>
